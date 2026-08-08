@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚑 Rescate Felino 🐈
+# 🚑 Can somebody save my kitties? 🐈
 
 ### Una carrera contrarreloj para llevar a cada gatito a salvo
 
