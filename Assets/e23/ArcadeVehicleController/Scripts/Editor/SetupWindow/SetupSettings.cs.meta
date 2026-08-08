@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6d8dc595eb721f9468bca76d7e951dfd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Scripts/Editor/SetupWindow/SetupSettings.cs
+  uploadId: 695768

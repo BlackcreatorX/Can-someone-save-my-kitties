@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1d222df0aff7bf546854f689b64929ed
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Examples/Effects/CollisionEffect.prefab
+  uploadId: 695768

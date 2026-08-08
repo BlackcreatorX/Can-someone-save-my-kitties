@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8a7c17556a9774d4a9e3bf48027fbf32
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Examples/AudioData/VehicleAudioData_Collision.asset
+  uploadId: 695768

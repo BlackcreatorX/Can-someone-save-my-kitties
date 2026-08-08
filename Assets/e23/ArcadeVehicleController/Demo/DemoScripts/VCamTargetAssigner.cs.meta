@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 1f5b5099a32f5414c9b03a7842c1ed76
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Demo/DemoScripts/VCamTargetAssigner.cs
+  uploadId: 695768

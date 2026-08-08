@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6bcb71a5e51624ff1b51ea9787604cb8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Examples/Effects/Trail.prefab
+  uploadId: 695768

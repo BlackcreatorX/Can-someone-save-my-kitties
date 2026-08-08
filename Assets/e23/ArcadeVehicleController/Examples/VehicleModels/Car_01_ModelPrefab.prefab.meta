@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 48d90530284f43e4097e5c38b6c08bd5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Examples/VehicleModels/Car_01_ModelPrefab.prefab
+  uploadId: 695768

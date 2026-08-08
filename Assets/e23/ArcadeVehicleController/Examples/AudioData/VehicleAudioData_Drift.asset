@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4895ffef15de954cb08999304a8b40c, type: 3}
+  m_Name: VehicleAudioData_Drift
+  m_EditorClassIdentifier: 
+  audioID: 
+  audioType: 5
+  audioClip: {fileID: 8300000, guid: e0e6a58f2f5c69444bbb873576b2b042, type: 3}
+  playOnAwake: 0
+  loop: 1
+  audioMixerGroup: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  priority: 128
+  volume: 1
+  pitch: 1
+  stereoPan: 0
+  spatialBlend: 1
+  reverbZoneMix: 1
+  dopplerLevel: 1
+  spread: 0
+  audioRolloffMode: 0
+  minDistance: 3
+  maxDistance: 500

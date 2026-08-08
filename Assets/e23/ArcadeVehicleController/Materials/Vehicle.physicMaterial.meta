@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b63b0dc9f78ff446b863b75d531b3ffa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Materials/Vehicle.physicMaterial
+  uploadId: 695768

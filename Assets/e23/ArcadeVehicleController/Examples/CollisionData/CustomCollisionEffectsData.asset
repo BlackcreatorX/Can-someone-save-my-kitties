@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c31f23b3bc8a304cb17ee1e134a98c4, type: 3}
+  m_Name: CustomCollisionEffectsData
+  m_EditorClassIdentifier: 
+  effectsID: CustomCollision
+  collisionType: 1
+  effectPrefab: {fileID: 3767109546362718496, guid: e2fd322318f03274fbb30a3edb06c9eb,
+    type: 3}
+  requiredSpeed: 2

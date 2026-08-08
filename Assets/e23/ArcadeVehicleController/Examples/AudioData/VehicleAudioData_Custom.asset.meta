@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0d0932bb9216ddc47a714b71634f4243
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157860
+  packageName: AVC - Arcade Car Controller - for cars, bikes, trucks, etc
+  packageVersion: 1.5.6
+  assetPath: Assets/e23/ArcadeVehicleController/Examples/AudioData/VehicleAudioData_Custom.asset
+  uploadId: 695768
