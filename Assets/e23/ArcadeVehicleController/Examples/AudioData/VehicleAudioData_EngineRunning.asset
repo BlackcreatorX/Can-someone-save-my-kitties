@@ -17,7 +17,7 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 3015ae44b15d5b14ebd1f08e3877aa43, type: 3}
   playOnAwake: 0
   loop: 1
-  audioMixerGroup: {fileID: 0}
+  audioMixerGroup: {fileID: -8669473057641488248, guid: a62a725a2a4dacf408b438dd84302935, type: 2}
   layerMask:
     serializedVersion: 2
     m_Bits: 0
