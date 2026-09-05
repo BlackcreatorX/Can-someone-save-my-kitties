@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5439409071488107104}
   - component: {fileID: 8239914110497883521}
-  m_Layer: 0
+  - component: {fileID: 8931074736289633769}
+  m_Layer: 6
   m_Name: Truck3Fixed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7289612708610004235}
+  - {fileID: 3220702830905113209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8239914110497883521
@@ -54,6 +56,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8931074736289633769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832093636577205371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefc02cbe287bf748bfcf35ea8fc2e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrafficCar
+  velocidadMaxima: 10
+  velocidadRotacion: 5
+  nodoActual: {fileID: 0}
+  distanciaRayo: 1.5
+  capaObstaculos:
+    serializedVersion: 2
+    m_Bits: 64
+  puntoRayo: {fileID: 3220702830905113209}
+--- !u!1 &7026365132703264079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3220702830905113209}
+  m_Layer: 6
+  m_Name: Raycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3220702830905113209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7026365132703264079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.41, z: 1.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5439409071488107104}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7107614107806872288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62,6 +115,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5439409071488107104}
     m_Modifications:
+    - target: {fileID: -9113188935828410231, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -102,9 +159,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5411515535535112415, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4692245144241842756, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1839730681719214801, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1795685380631069456, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
       propertyPath: m_Name
       value: Truck3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274002821321391207, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646251209617643900, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
