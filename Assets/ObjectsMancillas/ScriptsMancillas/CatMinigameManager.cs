@@ -58,6 +58,8 @@ public class CatMinigameManager : MonoBehaviour
     private int missClicksLeft; 
     private Coroutine minigameRoutine;
     private Button[] activeCatButtons; 
+    private int lastMissClickFrame = -1;
+    private bool isProcessingPointerClick;
 
     void Awake()
     {
@@ -85,6 +87,15 @@ public class CatMinigameManager : MonoBehaviour
             {
                 if (uiCursorImage != null) uiCursorImage.sprite = closedHandsSprite;
                 PlaySound(clickSFX);
+
+                // No dependemos del botón de fondo para detectar el error: cualquier
+                // clic que no caiga sobre el gato que está visible cuenta como fallo.
+                if (!PointerIsOverVisibleCat())
+                {
+                    isProcessingPointerClick = true;
+                    MissClickBackground();
+                    isProcessingPointerClick = false;
+                }
             }
             else if (Input.GetMouseButtonUp(0))
             {
@@ -223,6 +234,8 @@ public class CatMinigameManager : MonoBehaviour
 
     public void CatchCat()
     {
+        if (!isMinigameActive) return;
+
         if (minigameRoutine != null) StopCoroutine(minigameRoutine);
         
         if (activeCatButtons != null)
@@ -235,6 +248,14 @@ public class CatMinigameManager : MonoBehaviour
 
     public void MissClickBackground()
     {
+        // El botón de fondo antiguo también tiene este método asignado en algunas
+        // escenas. El fallo se procesa exclusivamente desde Update para que un clic
+        // no pueda llegar por ambas rutas.
+        if (!isProcessingPointerClick || !isMinigameActive || lastMissClickFrame == Time.frameCount) return;
+
+        // El evento del botón de fondo puede seguir configurado en la escena. Esta
+        // marca evita descontar dos intentos por el mismo clic.
+        lastMissClickFrame = Time.frameCount;
         missClicksLeft--; 
         
         if (attemptIcons != null && missClicksLeft >= 0 && missClicksLeft < attemptIcons.Length)
@@ -256,6 +277,34 @@ public class CatMinigameManager : MonoBehaviour
             
             StartCoroutine(EndMinigame(false));
         }
+    }
+
+    private bool PointerIsOverVisibleCat()
+    {
+        if (activeCatButtons == null) return false;
+
+        foreach (Button button in activeCatButtons)
+        {
+            if (button == null || !button.gameObject.activeInHierarchy || !button.interactable)
+            {
+                continue;
+            }
+
+            RectTransform rectTransform = button.transform as RectTransform;
+            if (rectTransform == null) continue;
+
+            Canvas canvas = button.GetComponentInParent<Canvas>();
+            Camera eventCamera = canvas != null && canvas.renderMode != RenderMode.ScreenSpaceOverlay
+                ? canvas.worldCamera
+                : null;
+
+            if (RectTransformUtility.RectangleContainsScreenPoint(rectTransform, Input.mousePosition, eventCamera))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private IEnumerator EndMinigame(bool won)
