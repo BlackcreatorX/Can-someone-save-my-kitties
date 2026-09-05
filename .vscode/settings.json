@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Can-someone-save-my-kitties.slnx"
+    "dotnet.defaultSolution": "jam 2.slnx"
 }
