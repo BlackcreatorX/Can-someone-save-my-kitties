@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5439409071488107104}
   - component: {fileID: 8239914110497883521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Truck3Fixed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5439409071488107104}
     m_Modifications:
+    - target: {fileID: -9113188935828410231, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -102,9 +106,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5411515535535112415, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4692245144241842756, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1839730681719214801, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1795685380631069456, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
       propertyPath: m_Name
       value: Truck3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274002821321391207, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646251209617643900, guid: 8f37ca00bb8eeb043bc6331920a123eb, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
