@@ -67768,6 +67768,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4358951869109649963, guid: 0712800804f523241be7d3076833fb4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1426909398}
+    - targetCorrespondingSourceObject: {fileID: 4358951869109649963, guid: 0712800804f523241be7d3076833fb4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1426909399}
   m_SourcePrefab: {fileID: 100100000, guid: 0712800804f523241be7d3076833fb4e, type: 3}
 --- !u!1001 &755147214
 PrefabInstance:
@@ -128827,6 +128830,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectorDestinos
   gameManager: {fileID: 105847416}
+--- !u!114 &1426909399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279543206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fba9021845364a4f8fb11cfcc883420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleVelocityTracker
 --- !u!1001 &1427774552
 PrefabInstance:
   m_ObjectHideFlags: 0
